@@ -1,0 +1,27 @@
+<ion-content class="ion-content" color="medium">
+    <div class="cpf-container">
+      <h1>Bem-vindo</h1>
+      <p>Faça login para continuar</p>
+
+        <ion-item>
+
+        <ion-input
+          [(ngModel)]="cpf"
+          placeholder="Digite o CPF"
+          type="text">
+        </ion-input>
+
+      </ion-item>
+        <ion-button expand="block" (click)="validarCPF()" class="button-valida">
+          Validar
+        </ion-button>
+
+      <ion-text *ngIf="resultado">
+        <h2>{{ resultado }}</h2>
+      </ion-text>
+
+      <ion-button routerLink="/home" color="success" class="button-home">
+        Página inicial
+      </ion-button>
+    </div>
+</ion-content>

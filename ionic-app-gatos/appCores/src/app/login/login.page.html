@@ -1,0 +1,32 @@
+<ion-content class="login-content">
+  <!-- Container principal -->
+  <div class="login-container">
+  <!-- Título -->
+    <h1>Bem-vindo</h1>
+      <p>Faça login para continuar</p>
+      <!-- Campo de Email -->
+      <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input
+      type="email"
+      [(ngModel)]="email">
+      </ion-input>
+      </ion-item>
+      <!-- Campo de Senha -->
+      <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input
+      type="password"
+      [(ngModel)]="senha">
+      </ion-input>
+      </ion-item>
+      <!-- Botão de Login -->
+      <ion-button expand="block" (click)="login()">
+      Entrar
+      </ion-button>
+
+      <ion-button routerLink="/home" color="success" class="button-home">
+        Página inicial
+      </ion-button>
+  </div>
+</ion-content>
